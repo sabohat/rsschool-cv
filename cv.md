@@ -12,7 +12,6 @@
 ### PROFESSIONAL EXPERIENCE
 
 #### Barq (Kingdom of Saudi Arabia, Remote) | Frontend Software Engineer (Full-time, Mar/2022 - Present)
-
 [Barq](https://barqfleet.com) is a Delivery as a Service (DaaS) [startup](https://www.crunchbase.com/organization/barq) that enables bullet delivery for businesses. I provide software engineering oversight of the company's core platform serving thousands of clients and internal employees.
 - Developed web app that used live location tracking and better route planning algorithm to decrease delivery cost and time
 - Migrated codebase from HTML to React, implemented best practices to avoid memory leak, improved usability and performance
@@ -20,7 +19,6 @@
 - **Stack:** *React.js, Tailwind, MUI, OSRM, Leaflet Maps*
   
 #### Upwork (Remote) | Freelance Frontend Developer (Aug/2021 - present)
-
 As a [Top Rated Freelancer](https://support.upwork.com/hc/en-us/articles/211068468-Top-Rated) on [Upwork](https://www.upwork.com), I have [contributed to]((https://www.upwork.com/freelancers/~0196f9c364d3f041da)) various tech startups all over the world. I contributed to both front and back-end projects. I worked independently and remotely while managing all project phases of projects assigned to me.
 - As solo developer, designed and developed full-stack MVP version of [Pastoral](https://www.pastoral.ai/) (livestock management platform, $100k+ funding)
 - Contributed to improving [Climatebase's](https://climatebase.org/) frontend (climate careers platform, 250k users/mo), by updating design and fixing bugs
@@ -55,5 +53,5 @@ As a [Top Rated Freelancer](https://support.upwork.com/hc/en-us/articles/2110684
 ##### LANGUAGES
 *English ([IELTS 7.5](https://drive.google.com/file/d/1rJJBlvBoWDgu2gZmdqLNPO4enHhZ055w/view?usp=sharing)) • Uzbek (Native)*
 
-#### HOBBIES
+##### HOBBIES
  *Winter Sports • Knitting • Badminton • Calligraphy*
