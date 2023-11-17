@@ -32,7 +32,7 @@ As a [Top Rated Freelancer](https://support.upwork.com/hc/en-us/articles/2110684
 - Developed a loan management system that currently has 10k+ monthly users
 - Mentored 2 new hires and helped with the onboarding process by ramping them up with Next.js, Redux and version control
 - Integrated language support (English and Russian) to 3 web platforms by implementing i18n translation tool for React and Next.js
-- Stack: JavaScript, HTML, CSS, Next.js, Sass, Nest.js
+- **Stack:** *JavaScript, HTML, CSS, Next.js, Sass, Nest.js*
 
 ----------------------------------------------------------------
 
