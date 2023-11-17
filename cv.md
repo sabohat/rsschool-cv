@@ -5,7 +5,7 @@
 ----------------------------------------------------------------
 2+ years of experience as Frontend Software Engineer | JavaScript, React.js, Next.js
 
-Main Fields: Logistics, Warehouse Management, IT service, Startups
+**Main Fields:** *Logistics, Warehouse Management, IT service, Startups*
 
 ----------------------------------------------------------------
 
@@ -39,7 +39,7 @@ As a [Top Rated Freelancer](https://support.upwork.com/hc/en-us/articles/2110684
 ### EDUCATION
 
 #### Bachelor's Degree in Business Information Systems | Westminster International University in Tashkent (Uzbekistan, 2019 - 2023)
-[#1 International University](https://globalscholarships.com/best-universities-uzbekistan/) in Uzbekistan, 1st in Central Asia to follow a Western Education system. Second Upper Class Honors. Relevant Courses: Introduction to Computer Science, OOP Concepts, Networking, Project Management, Information Security
+[#1 International University](https://globalscholarships.com/best-universities-uzbekistan/) in Uzbekistan, 1st in Central Asia to follow a Western Education system. Second Upper Class Honors. **Relevant Courses:** *Introduction to Computer Science, OOP Concepts, Networking, Project Management, Information Security*
 
 ----------------------------------------------------------------
 
@@ -52,6 +52,8 @@ As a [Top Rated Freelancer](https://support.upwork.com/hc/en-us/articles/2110684
 
 ----------------------------------------------------------------
 
-**LANGUAGES** English ([IELTS 7.5](https://drive.google.com/file/d/1rJJBlvBoWDgu2gZmdqLNPO4enHhZ055w/view?usp=sharing)) • Uzbek (Native)
+##### LANGUAGES
+*English ([IELTS 7.5](https://drive.google.com/file/d/1rJJBlvBoWDgu2gZmdqLNPO4enHhZ055w/view?usp=sharing)) • Uzbek (Native)*
 
-**HOBBIES** Winter Sports • Knitting • Badminton • Calligraphy
+#### HOBBIES
+ *Winter Sports • Knitting • Badminton • Calligraphy*
