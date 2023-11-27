@@ -129,6 +129,7 @@ a {
 .home__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .home__img {
@@ -440,4 +441,17 @@ flex-grow: 1;
 
 .contact .card_simple {
   width: 100%;
+}
+
+/*  footer */
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  padding: 30px 30px 10px ;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
