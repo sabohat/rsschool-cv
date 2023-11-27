@@ -312,7 +312,7 @@ section {
 }
 
 .scroll-container .card {
-  min-width: 250px;
+  width: 250px;
 }
 
 .scroll-container .card:hover {
@@ -325,7 +325,6 @@ section {
   padding: 0 20px;
   animation: scrollText 30s infinite linear;
   width: fit-content;
-  white-space: nowrap;
 }
 
 /* .scroll-items:last-of-type {
