@@ -456,6 +456,10 @@ flex-grow: 1;
 .contact__img {
   height: 60vh;
 }
+.contact .info__title {
+  font-size: 32px;
+  font-weight: 500;
+  }
 
 .contact .card_simple {
   width: 100%;
