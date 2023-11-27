@@ -123,6 +123,7 @@ a {
 
 .home {
   background: #ffc700;
+  padding: 100px 0;
 }
 
 .home__container {
@@ -131,7 +132,7 @@ a {
 }
 
 .home__img {
-  width: 42%;
+  height: 80vh;
 }
 
 .home__content {
@@ -216,6 +217,7 @@ a {
     padding: 40px 0;
     display: flex;
     align-items: flex-end;
+    background-color: rgb(204, 200, 200);
 }
 
 .skills__container {
@@ -327,7 +329,9 @@ a {
 }
 
 /* Education section */
-
+.education {
+  background-color: #f3ceb4;
+}
 .card_simple {
   width: 60%;
   display: flex;
@@ -374,6 +378,10 @@ font-weight: 500;
 }
 
 /* Code Examples section */
+.code .card {
+  background-color: rgb(52, 50, 50);
+  color: rgb(207, 198, 198);
+}
 .code-container {
   display: flex;
 }
@@ -411,4 +419,25 @@ font-weight: 500;
   position: relative;
   left: 40%;
   top: -10%;
+}
+
+/* Contact section */
+.contact {
+  background-color: var(--bg-primary);
+}
+.contact__container {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__content {
+flex-grow: 1;
+}
+.contact__img {
+  height: 60vh;
+}
+
+.contact .card_simple {
+  width: 100%;
 }
