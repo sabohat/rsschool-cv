@@ -41,6 +41,7 @@ a {
 }
 
 .body {
+  margin: 0;
   font-size: 16rem;
   font-family: 'Roboto Condensed';
 }
@@ -269,4 +270,58 @@ a {
   margin-top: 12px;
   font-family: var(--font-secondary);
   font-weight: 400;
+}
+
+/* Projects Section */
+.scroll-container {
+  margin: 60px auto;
+  width: 100%;
+  padding: 30px 0;
+  background-color: var(--primary-dark);
+  display: inline-flex;
+  overflow-x: hidden;
+}
+.scroll-container:hover {
+  overflow: auto;
+}
+
+.scroll-container:hover .scroll-items {
+  animation-play-state:paused;
+}
+
+.scroll-container .card {
+  min-width: 250px;
+}
+
+.scroll-container .card:hover {
+  transform: scale(1.1);
+}
+
+.scroll-items {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  animation: scrollText 30s infinite linear;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+/* .scroll-items:last-of-type {
+  transform: translateX(-100%);
+} */
+
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: var(--border-primary);
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
