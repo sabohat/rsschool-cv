@@ -164,7 +164,7 @@ a {
     text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.date {
+/* .date {
     width: fit-content;
     padding: 0 30px;
     border-top: var(--border-primary);
@@ -178,7 +178,7 @@ a {
     padding: 10px 12px;
     border-left: var(--border-primary);
     border-right: var(--border-primary);
-}
+} */
 
 /* About Section */
 .about {
@@ -448,6 +448,9 @@ flex-grow: 1;
   position: fixed;
   bottom: 0;
   padding: 30px 30px 10px ;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer__links {
