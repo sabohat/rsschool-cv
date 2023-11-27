@@ -213,7 +213,7 @@ a {
 
 /* Skills section */
 .skills {
-    padding: 60px 0;
+    padding: 40px 0;
     display: flex;
     align-items: flex-end;
 }
@@ -222,8 +222,8 @@ a {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
-    grid-column-gap: 80px;
-    grid-row-gap: 50px;
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
 }
 
 .card {
@@ -324,4 +324,91 @@ a {
   to {
     transform: translateX(-100%);
   }
+}
+
+/* Education section */
+
+.card_simple {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: var(--border-primary);
+}
+
+.education-info {
+  color:var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.education-info__title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.education-info__title .img-container{
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.info__title {
+font-size: 32px;
+font-weight: 500;
+}
+.education__val {
+font-size: 28rem;
+font-weight: 500;
+}
+.dotted-line {
+  flex-grow: 1;
+  border-bottom: 4px dotted var(--primary);
+  height: 1px;
+}
+
+/* Code Examples section */
+.code-container {
+  display: flex;
+}
+.code-explanation {
+  width: 40%;
+}
+
+.code-desc {
+  margin-top: 30px;
+}
+
+.arrow-svg {
+  width: 100%;
+  position: relative;
+  left: 10%;
+  z-index: 2;
+}
+
+.code-example {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14rem;
+}
+.code-example .card:first-of-type {
+  width: fit-content;
+  padding: 14px 20px;
+  border-color: var(--bg-primary);
+}
+.code-example .card:last-of-type {
+  width: 60%;
+  padding: 14px 20px;
+  border-color: var(--bg-secondary);
+
+  position: relative;
+  left: 40%;
+  top: -10%;
 }
