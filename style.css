@@ -296,7 +296,7 @@ section {
 
 /* Projects Section */
 .scroll-container {
-  margin: 60px auto;
+  margin-top:10px;
   width: 100%;
   padding: 30px 0;
   background-color: var(--primary-dark);
