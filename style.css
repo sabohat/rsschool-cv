@@ -383,7 +383,7 @@ section {
   justify-content: flex-end;
 }
 
-.info__title {
+.education .info__title {
 font-size: 32px;
 font-weight: 500;
 }
