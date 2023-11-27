@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap');
+
+/* Variables */
+:root {
+  --primary: #000;
+  --primary-dark: #141414;
+  --primary-light: #fff;
+  --secondary: #7fbc8c;
+  --bg-primary: #ffc700;
+  --bg-primary-light: #f3ceb4;
+  --bg-secondary: #746beb;
+
+  --header-height: 100px;
+
+  --border-primary: 2px solid var(--primary);
+
+  --font-primary: "Roboto Condensed";
+  --font-secondary: "Roboto Flex";
+}
+
+/* Normalize CSS */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* CSS for component sections */
+
+:root {
+  font-size: 1px;
+}
+
+.body {
+  margin: 0;
+  font-size: 16rem;
+  font-family: 'Roboto Condensed';
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.header {
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  z-index: 10;
+}
+
+.section {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.section {
+  padding: calc(var(--header-height) + 60px) 0;
+}
+
+.section__title {
+    font-size: 28rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.80px;
+}
+
+.nav {
+  width: 100%;
+
+  font-size: 24rem;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: var(--border-primary);
+  border-bottom: var(--border-primary);
+}
+
+.logo {
+  padding: 10px 20px;
+  border-right: var(--border-primary);
+}
+
+.logo__icon {
+  height: 30px;
+}
+
+.nav-links {
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+.nav__link {
+  display: block;
+}
+
+.nav__link:hover {
+  transform: translate(1px, -2px);
+  text-decoration: underline;
+}
+.nav__link:hover a {
+  color: var(--bg-secondary);
+}
+
+/* Scroll styles */
+.main {
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100vh;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.section {
+  /* opacity: 0.5; */
+  z-index: 5;
+  scroll-snap-align: center;
+  height: 100vh;
+  flex: none;
+}
+
+
+/* Home page styles */
+.home {
+  background: #ffc700;
+  padding: 100px 0;
+}
+
+.home__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__img {
+  height: 80vh;
+}
+
+.home__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info__subtitle {
+  font-size: 24rem;
+  font-weight: 500;
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  line-height: 82rem;
+  letter-spacing: 3.2rem;
+}
+
+.info__title {
+  font-size: 70rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.info__description {
+    font-size: 60rem;
+    font-weight: 400;
+    color: var(--bg-primary);
+    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* .date {
+    width: fit-content;
+    padding: 0 30px;
+    border-top: var(--border-primary);
+    border-bottom: var(--border-primary);
+}
+.date__text {
+    font-size: 24rem;
+    font-weight: 700;
+
+    display: inline-block;
+    padding: 10px 12px;
+    border-left: var(--border-primary);
+    border-right: var(--border-primary);
+} */
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.about__content {
+    width: 60%;
+    margin:  0 auto;
+}
+
+.title-container {
+    display: flex;
+    gap: 12px;
+}
+
+.about__desc {
+    margin-top: 16px;
+    font-size: 26rem;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.decorative-img {
+    position: absolute;
+    right: 60px;
+    bottom: 50px;
+    width: 6%;
+}
+
+/* Skills section */
+.skills {
+    padding: 40px 0;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(204, 200, 200);
+}
+
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+}
+
+.card {
+    padding: 50px 32px;
+    color: var(--primary-light);
+    border-radius: 16px;
+    border: 4px solid var(--primary);
+    background-color: var(--bg-secondary);
+    box-shadow: 4px 4px 0px 0px var(--primary);
+    position: relative;
+}
+
+.card:first-of-type, .card:last-of-type {
+  background-color: white;
+  color: var(--primary-dark)
+}
+
+.card:nth-child(3), .card:nth-child(6) {
+  background-color: var(--bg-primary-light);
+  color: var(--primary-dark)
+}
+.card:nth-child(5), .card:nth-child(7) {
+  background-color: var(--secondary);
+}
+
+.card__tag {
+    padding: 6px 10px;
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    background-color: var(--bg-primary);
+    border: var(--border-primary);
+    border-radius: 9px;
+    color: var(--primary)
+}
+
+.card__title {
+  font-size: 18rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card__desc {
+  margin-top: 12px;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+}
+
+/* Projects Section */
+.scroll-container {
+  margin-top:10px;
+  width: 100%;
+  padding: 30px 0;
+  background-color: var(--primary-dark);
+  display: inline-flex;
+  overflow-x: hidden;
+}
+.scroll-container:hover {
+  overflow: auto;
+}
+
+.scroll-container:hover .scroll-items {
+  animation-play-state:paused;
+}
+
+.scroll-container .card {
+  width: 250px;
+}
+
+.scroll-container .card:hover {
+  transform: scale(1.1);
+}
+
+.scroll-items {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  animation: scrollText 30s infinite linear;
+  width: fit-content;
+}
+
+/* .scroll-items:last-of-type {
+  transform: translateX(-100%);
+} */
+
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: var(--border-primary);
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Education section */
+.education {
+  background-color: #f3ceb4;
+}
+.card_simple {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: var(--border-primary);
+}
+
+.education-info {
+  color:var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.education-info__title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.education-info__title .img-container{
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.education .info__title {
+font-size: 32px;
+font-weight: 500;
+}
+.education__val {
+font-size: 28rem;
+font-weight: 500;
+}
+.dotted-line {
+  flex-grow: 1;
+  border-bottom: 4px dotted var(--primary);
+  height: 1px;
+}
+
+/* Code Examples section */
+.code .card {
+  background-color: rgb(52, 50, 50);
+  color: rgb(207, 198, 198);
+}
+.code-container {
+  display: flex;
+}
+.code-explanation {
+  width: 40%;
+}
+
+.code-desc {
+  margin-top: 30px;
+}
+
+.arrow-svg {
+  width: 100%;
+  position: relative;
+  left: 10%;
+  z-index: 2;
+}
+
+.code-example {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14rem;
+}
+.code-example .card:first-of-type {
+  width: fit-content;
+  padding: 14px 20px;
+  border-color: var(--bg-primary);
+}
+.code-example .card:last-of-type {
+  width: 60%;
+  padding: 14px 20px;
+  border-color: var(--bg-secondary);
+
+  position: relative;
+  left: 40%;
+  top: -10%;
+}
+
+/* Contact section */
+.contact {
+  background-color: var(--bg-primary);
+}
+.contact__container {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__content {
+flex-grow: 1;
+}
+.contact__img {
+  height: 60vh;
+}
+.contact .info__title {
+  font-size: 32px;
+  font-weight: 500;
+  }
+
+.contact .card_simple {
+  width: 100%;
+}
+
+/*  footer */
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  padding: 30px 30px 10px ;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
