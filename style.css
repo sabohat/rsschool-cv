@@ -2,21 +2,20 @@
 
 /* Variables */
 :root {
-  ---primary: #000;
-  ---primary-dark: #141414;
-  ---primary-light: #fff;
-  ---secondary: #7fbc8c;
-  ---bg-primary: #ffc700;
-  ---bg-primary-light: #f3ceb4;
-  ---bg-secondary: #746beb;
+  --primary: #000;
+  --primary-dark: #141414;
+  --primary-light: #fff;
+  --secondary: #7fbc8c;
+  --bg-primary: #ffc700;
+  --bg-primary-light: #f3ceb4;
+  --bg-secondary: #746beb;
 
-  ---header-height: 100px;
+  --header-height: 100px;
 
-  ---border-primary: 2px solid var(---primary);
+  --border-primary: 2px solid var(--primary);
 
-
-  ---font-primary: "Roboto Condensed";
-  ---font-secondary: "Roboto Flex";
+  --font-primary: "Roboto Condensed";
+  --font-secondary: "Roboto Flex";
 }
 
 /* Normalize CSS */
@@ -31,7 +30,7 @@ li {
 }
 
 a {
-  color: var(---primary);
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -60,7 +59,7 @@ a {
 
 .header {
   width: 100%;
-  height: var(---header-height);
+  height: var(--header-height);
   position: fixed;
   z-index: 10;
 }
@@ -72,7 +71,7 @@ a {
 }
 
 .section {
-  padding: calc(var(---header-height) + 60px) 0;
+  padding: calc(var(--header-height) + 60px) 0;
 }
 
 .section__title {
@@ -91,13 +90,13 @@ a {
   display: flex;
   justify-content: space-between;
 
-  border-top: var(---border-primary);
-  border-bottom: var(---border-primary);
+  border-top: var(--border-primary);
+  border-bottom: var(--border-primary);
 }
 
 .logo {
   padding: 10px 20px;
-  border-right: var(---border-primary);
+  border-right: var(--border-primary);
 }
 
 .logo__icon {
@@ -118,7 +117,7 @@ a {
   text-decoration: underline;
 }
 .nav__link:hover a {
-  color: var(---bg-secondary);
+  color: var(--bg-secondary);
 }
 
 .home {
@@ -143,7 +142,7 @@ a {
 .info__subtitle {
   font-size: 24rem;
   font-weight: 500;
-  font-family: var(---font-secondary);
+  font-family: var(--font-secondary);
   text-transform: uppercase;
   line-height: 82rem;
   letter-spacing: 3.2rem;
@@ -158,15 +157,15 @@ a {
 .info__description {
     font-size: 60rem;
     font-weight: 400;
-    color: var(---bg-primary);
+    color: var(--bg-primary);
     text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .date {
     width: fit-content;
     padding: 0 30px;
-    border-top: var(---border-primary);
-    border-bottom: var(---border-primary);
+    border-top: var(--border-primary);
+    border-bottom: var(--border-primary);
 }
 .date__text {
     font-size: 24rem;
@@ -174,8 +173,8 @@ a {
 
     display: inline-block;
     padding: 10px 12px;
-    border-left: var(---border-primary);
-    border-right: var(---border-primary);
+    border-left: var(--border-primary);
+    border-right: var(--border-primary);
 }
 
 /* About Section */
@@ -199,7 +198,7 @@ a {
 .about__desc {
     margin-top: 16px;
     font-size: 26rem;
-    font-family: var(---font-secondary);
+    font-family: var(--font-secondary);
     font-weight: 400;
     line-height: 150%;
 }
@@ -209,4 +208,65 @@ a {
     right: 60px;
     bottom: 50px;
     width: 6%;
+}
+
+/* Skills section */
+.skills {
+    padding: 60px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 80px;
+    grid-row-gap: 50px;
+}
+
+.card {
+    padding: 50px 32px;
+    color: var(--primary-light);
+    border-radius: 16px;
+    border: 4px solid var(--primary);
+    background-color: var(--bg-secondary);
+    box-shadow: 4px 4px 0px 0px var(--primary);
+    position: relative;
+}
+
+.card:first-of-type, .card:last-of-type {
+  background-color: white;
+  color: var(--primary-dark)
+}
+
+.card:nth-child(3), .card:nth-child(6) {
+  background-color: var(--bg-primary-light);
+  color: var(--primary-dark)
+}
+.card:nth-child(5), .card:nth-child(7) {
+  background-color: var(--secondary);
+}
+
+.card__tag {
+    padding: 6px 10px;
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    background-color: var(--bg-primary);
+    border: var(--border-primary);
+    border-radius: 9px;
+    color: var(--primary)
+}
+
+.card__title {
+  font-size: 18rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card__desc {
+  margin-top: 12px;
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
